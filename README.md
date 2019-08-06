@@ -28,22 +28,22 @@ Once you have a valid delivery note, follow these steps:
 
 ## How to Fill In a Delivery Note Template
 
-There are fields in the template.
+There are frames in the template.
 
-Each field contains a specific piece of information (e.g. company name, item code, item description, quantity, ecc.).
+Each frame contains a specific piece of information (e.g. company name, item code, item description, quantity, ecc.).
 
 Here are some important points:
 
-1. Fields in the upper left-hand corner of the document hold data about the seller (You).
+1. frames in the upper left-hand corner of the document hold data about the seller (You).
 
-2. Fields in the SHIP TO and SOLD TO sections hold data about the buyer (that is: your customer).
+2. frames in the SHIP TO and SOLD TO sections hold data about the buyer (that is: your customer).
 
     **Note: DeliveryNote2XML looks in the customer data file for discounts to be applied to each customer.**
     This means the customer id in each delivery note must be found in the customer data file, otherwise a warning will be issued.
 
     You can change this file location by clicking on the **Change** button in the UI
 
-3. Just below the SHIP TO and SOLD TO sections, you can find fields for:
+3. Just below the SHIP TO and SOLD TO sections, you can find frames for:
 
     \- Order date
 
@@ -55,38 +55,36 @@ Here are some important points:
 
     ...and so on.
 
-    most fields have a label that is self-explanatory
+    most frames have a label that is self-explanatory
 
 4. Next follows item data. Each line in this section identifies one product: code, description and quantity.
 
     Note the first line is a sample and it's pre-filled
 
-5. Make sure to remove unused item fields, or the program will crash.
+5. Make sure to remove unused item frames, or the program will crash.
 
-   **Note: empty non-item fields need not to be removed.**
+   **Note: empty non-item frames need not to be removed.**
 
-6. More fields follow further on down in the template
+6. More frames follow further on down in the template
 
-## Unused Fields
+## Unused frames
 
-Some fields are empty.
+Some frames are empty.
 
 They can be used in the future to add more data, such as: 
 
 \- vat code
 
-\- start/end transport date/time
-
 \- a footnote.
 
-Click inside any field and use arrow keys to move to the previous/next field.
+Click inside any frame and use arrow keys to move to the previous/next frame.
 
-Obviously, the source code of the application would need to be modified to account for the new fields.
+Obviously, the source code of the application would need to be modified to account for the new frames.
 
 ## Exception Handling
 
 Sometimes documents can have an invalid structure.
 
-A common glitch is when customer information is incorrectly placed in the DESCRIPTION field of the first item.
+A common glitch is when customer information is incorrectly placed in the DESCRIPTION frame of the first item.
 
 Look at the files in the **issues** folder to get an idea of how **DeliveryNote2XML** handles this occurrence.
