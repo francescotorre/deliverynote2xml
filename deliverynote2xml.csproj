@@ -100,17 +100,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="deliveynotesamples\001.rtf" />
-    <None Include="deliveynotesamples\002.rtf" />
-    <None Include="deliveynotesamples\003.rtf" />
-    <None Include="deliveynotesamples\004.rtf" />
-    <None Include="deliveynotesamples\005.rtf" />
-    <None Include="deliveynoteswithproblems\customer-data-in-description-field.rtf" />
-    <None Include="deliveynoteswithproblems\customer-not-found.rtf" />
-    <None Include="deliveynotetemplates\raw\_blank-one-page.rtf" />
-    <None Include="deliveynotetemplates\raw\_blank.rtf" />
-    <None Include="deliveynotetemplates\_blank-one-page.rtf" />
-    <None Include="deliveynotetemplates\_blank.rtf" />
+    <None Include="samples\001.rtf" />
+    <None Include="samples\002.rtf" />
+    <None Include="samples\003.rtf" />
+    <None Include="samples\004.rtf" />
+    <None Include="samples\005.rtf" />
+    <None Include="issues\customer-data-in-description-field.rtf" />
+    <None Include="issues\customer-not-found.rtf" />
+    <None Include="templates\_blank-one-page.rtf" />
+    <None Include="templates\_blank.rtf" />
     <None Include="LICENSE" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

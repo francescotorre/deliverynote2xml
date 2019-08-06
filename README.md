@@ -12,9 +12,9 @@ So, **make sure you have saved any open documents before launching the program**
 
 ## How to Use This Program
 
-First, the program is tailored to a specific document structure, so you need a delivery note in the correct format. For that, you can use one of the samples in the **deliverynotesamples** folder or you can fill in a template yourself.
+First, the program is tailored to a specific document structure, so you need a delivery note in the correct format. For that, you can use one of the samples in the **samples** folder or you can fill in a template yourself.
 
-Empty templates can be found in the **deliverynotetemplates** folder.
+Empty templates can be found in the **templates** folder.
 
 Once you have a valid delivery note, follow these steps:
 
@@ -89,4 +89,4 @@ Sometimes documents can have an invalid structure.
 
 A common glitch is when customer information is incorrectly placed in the DESCRIPTION field of the first item.
 
-Look at the files in the **deliverynoteerrors** folder to get an idea of how **DeliveryNote2XML** handles this occurrence.
+Look at the files in the **issues** folder to get an idea of how **DeliveryNote2XML** handles this occurrence.
