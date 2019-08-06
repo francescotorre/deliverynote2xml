@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/style.css">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- <script src="js/script.js"></script> -->
+
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body data-spy="scroll" data-target="#mainNavBar" data-offset="70">
+
+    <nav class="navbar navbar-expand-sm fixed-top" id="mainNavBar">
+      <ul class="navbar-nav mx-auto nav-fill w-100">
+        <li class="nav-item">
+          <a class="nav-link active" href="#divIntroduction"><h6>Introduction</h6></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#divWarning"><h6>Warning</h6></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#divHowToUse"><h6>Using This Program</h6></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#divHowToFill"><h6>Filling In a Delivery Note Template</h6></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#divUnusedFields"><h6>Unused Frames</h6></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#divExceptionHandling"><h6>Exception Handling</h6></a>
+              </li>
+      </ul>
+    </nav>    
+
+    <div id="content" >
+      <div class="container divContent" id="divIntroduction">
+        <h1>Introduction</h1>
+
+        <p><h3>Turns this...</h3></p>
+
+       <img class="howToImg" src="images/001.jpg" class="img-fluid"/>
+        
+        <p><h3>...into this!</h3></p>
+        
+        <img class="howToImg" src="images/002.jpg" class="img-fluid"/>
+        <br/>
+        <p>
+          The idea behind this program is to work alongside software that exports shipping documents, invoices and other documents to <b>Microsoft Word</b> format (<em>.rtf</em>, <em>.doc</em>, <em>.docx</em>).
+        </p>
+
+        <p>
+            One of such software is <b>Easyfatt</b> by <b>Danea Soft</b>.
+        </p>
+
+        <p>
+          With few changes to its source, <b>DeliveryNote2XML</b> can be easily adapted to work with any software similar to <b>Easyfatt</b>.
+        </p>
+
+        <p>
+            <b>DeliveryNote2XML</b> converts  dynamically generated shipping documents from RTF format to XML.
+        </p>
+      </div>
+
+      <div class="container divContent" id="divWarning">
+          <h1>Warning</h1>
+        
+          <p>
+            In order to function properly, <b>DeliveryNote2XML</b> could close <b>Microsoft Word/Excel</b> <em>without prompt.</em>
+          </p>
+
+          <p>
+            So, <b>make sure you have saved any open documents before launching the program.</b>
+          </p>
+        </div>
+
+      <div class="container divContent" id="divHowToUse">
+          <h1>How to Use This Program</h1>
+
+          <p>
+            First, the program is tailored to a specific document structure, so you need a delivery note in the correct format. For that, you can use one of the samples in the <b>samples</b> folder or you can fill in a template yourself.
+          </p>
+
+          <p>
+            Empty templates can be found in the <b>templates</b> folder.
+          </p>
+
+          <p>
+              Once you have a valid delivery note, follow these steps:
+          </p>
+          
+          <ol>
+              <li>
+                Launch  <b>DeliveryNote2XML</b>
+                <br/>
+                <img class="howToImg" src="images/003.jpg" class="img-fluid"/>
+              </li>
+              
+              <li>
+                Select your delivery note by clicking <b>Open RTF file</b>
+              </li>
+              <br/>
+                <img class="howToImg" src="images/004.jpg" class="img-fluid"/>
+              <li>
+                Optionally, click <b>Save XML file as...</b> to choose the location where the generated XML file will be saved. By default, it's the same folder as the RTF document
+                <br/>
+                <img class="howToImg" src="images/005.jpg" class="img-fluid"/>
+              </li>
+
+              <li>
+                Click <b>CONVERT</b>
+                <br/>
+                <img class="howToImg" src="images/006.jpg" class="img-fluid"/>
+              </li>
+            </ol>
+      </div>
+
+      <div class="container divContent" id="divHowToFill">
+          <h1>How to Fill In a Delivery Note Template</h1>
+
+          <p>
+            There are frames in the template.
+          </p>
+
+          <p>
+            Each frame contains a specific piece of information (e.g. company name, item code, item description, quantity, ecc.).
+          </p>
+
+          <p>
+            Here are some important points:
+          </p>
+
+          <ol>
+            <li>
+                Frames in the upper left-hand corner of the document hold data about the seller (You).
+                <br/>
+                <img class="howToImg" src="images/007.jpg" class="img-fluid"/>
+            </li>
+
+            <li>
+                <p>Frames in the SHIP TO and SOLD TO sections hold data about the buyer (that is: your customer).</p>
+                <img class="howToImg" src="images/008.jpg" class="img-fluid"/>
+                <p><b>Note: DeliveryNote2XML looks in the customer data file for discounts to be applied to each customer. </b>
+                <br/>
+                This means the customer id in each delivery note must be found in the customer data file, otherwise a warning will be issued.
+                </p>
+                <img class="howToImg" src="images/009.jpg" class="img-fluid"/> 
+               
+                <p>
+                  You can change this file location by clicking on the <b>Change</b> button in the UI
+                </p>
+                
+                <img class="howToImg" src="images/010.jpg" class="img-fluid"/>
+            </li>
+
+            <li>
+                <p>Just below the SHIP TO and SOLD TO sections, you can find frames for:</p>
+
+                <ul>
+                  <li>
+                      - Order date
+                  </li>
+
+                  <li>
+                      - Order number
+                      <br/>
+                      <img class="howToImg" src="images/011A.jpg" class="img-fluid"/>
+                  </li>
+
+                  <li>
+                      - Document date
+                  </li>
+
+                  <li>
+                      - Document number...
+                      <br/>
+                      <img class="howToImg" src="images/011B.jpg" class="img-fluid"/>
+                  </li>
+                </ul>
+                <p>...and so on.</p>
+                <p>
+                    most frames have a label that is self-explanatory
+                </p>
+            </li>
+
+            <li>
+                <p>Next follows item data. Each line in this section identifies one product:</p>
+
+                <p>code, ...</p>
+
+                <img class="howToImg" src="images/012.jpg" class="img-fluid"/>
+
+                <p>... description ...</p>
+
+                <img class="howToImg" src="images/013.jpg" class="img-fluid"/>
+
+                <p>...and quantity.</p>  
+                
+                <img class="howToImg" src="images/014.jpg" class="img-fluid"/>
+                
+                <p>
+                    Note the first line is a sample and it's pre-filled
+                </p>
+
+                <img class="howToImg" src="images/015.jpg" class="img-fluid"/>
+
+            </li>
+
+            <li>
+                <p>Make sure to remove unused item frames, or the program will crash.</p>
+                <p>
+                    <b>Note: empty non-item frames need not to be removed.</b>
+                </p>
+            </li>
+
+            <li>
+                More frames follow further on down in the template
+            </li>
+          </ol>
+      </div>
+
+      <div class="container divContent" id="divUnusedFields">
+          <h1>Unused Frames</h1>
+
+          <p>
+            Some frames are <em>empty</em>.
+          </p>
+
+          <p>
+            They can be used in the future to add more data, such as: vat code...
+          </p>
+
+          <img class="howToImg" src="images/016.jpg" class="img-fluid"/>
+
+          <p>
+            ...or a footnote.
+          </p>
+
+          <img class="howToImg" src="images/017.jpg" class="img-fluid"/>
+
+          <p>
+            Click inside any frame and use arrow keys to move to the previous/next frame.
+          </p>
+
+          <p>
+            Obviously, the source code of the application would need to be modified to account for the new frames.
+          </p>
+      </div>
+
+      <div class="container divContent" id="divExceptionHandling">
+          <h1>Exception Handling</h1>
+
+          <p>
+            Easyfatt-like software can sometimes produce documents with an invalid structure.
+          </p>
+            A common glitch is when customer information is incorrectly placed in the DESCRIPTION frame of the first item.
+          <p>
+
+              <img class="howToImg" src="images/018.jpg" class="img-fluid"/>
+
+          </p>
+            Look at the files in the <b>issues</b> folder to get an idea of how <b>DeliveryNote2XML</b> handles this occurrence.
+          <p>
+      </div>
+    </div>
+    <div style="height: 2000px">
+    </div>
+</body>
+</html>
