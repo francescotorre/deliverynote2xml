@@ -111,6 +111,7 @@
     <None Include="deliveynotetemplates\raw\_blank.rtf" />
     <None Include="deliveynotetemplates\_blank-one-page.rtf" />
     <None Include="deliveynotetemplates\_blank.rtf" />
+    <None Include="LICENSE" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
