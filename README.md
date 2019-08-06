@@ -46,9 +46,12 @@ Here are some important points:
 3. Just below the SHIP TO and SOLD TO sections, you can find fields for:
 
     \- Order date
-	\- Order number
-	\- Document date
-	\- Document number...
+
+    \- Order number
+
+    \- Document date
+
+    \- Document number...
 
     ...and so on.
 
@@ -71,7 +74,9 @@ Some fields are empty.
 They can be used in the future to add more data, such as: 
 
 \- vat code
+
 \- start/end transport date/time
+
 \- a footnote.
 
 Click inside any field and use arrow keys to move to the previous/next field.
