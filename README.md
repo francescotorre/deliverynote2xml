@@ -34,9 +34,9 @@ Each frame contains a specific piece of information (e.g. company name, item cod
 
 Here are some important points:
 
-1. frames in the upper left-hand corner of the document hold data about the seller (You).
+1. Frames in the upper left-hand corner of the document hold data about the seller (You).
 
-2. frames in the SHIP TO and SOLD TO sections hold data about the buyer (that is: your customer).
+2. Frames in the SHIP TO and SOLD TO sections hold data about the buyer (that is: your customer).
 
     **Note: DeliveryNote2XML looks in the customer data file for discounts to be applied to each customer.**
     This means the customer id in each delivery note must be found in the customer data file, otherwise a warning will be issued.
@@ -67,7 +67,7 @@ Here are some important points:
 
 6. More frames follow further on down in the template
 
-## Unused frames
+## Unused Frames
 
 Some frames are empty.
 
